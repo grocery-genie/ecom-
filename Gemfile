@@ -5,17 +5,18 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'figaro'
 gem 'stripe',:git=> 'https://github.com/stripe/stripe-ruby'
-gem 'bootstrap-sass'
-gem 'font-awesome-rails'
 gem 'jquery-rails'
-gem 'devise'
-gem 'carrierwave'
-gem 'cancancan'
 gem 'pry-rails'
 gem 'better_errors', group: :development
 gem 'binding_of_caller'
+gem 'bootstrap-sass'
+gem 'cancancan'
+gem 'carrierwave'
+gem 'devise'
+gem 'figaro'
+gem 'font-awesome-rails'
+gem 'stripe',:git=> 'https://github.com/stripe/stripe-ruby'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
