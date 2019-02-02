@@ -1,13 +1,28 @@
 <h2>My Cart</h2>
 
-<div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+<tbody>
 <% @line_items.each do |line_item| %>
-<li><%= line_item.product.name %></li>
-<li><%= number_to_currency line_item.product.price %></li>
-<li>Qty: <%= line_item.quantity %></li>
-<li>Subtotal: <%= number_to_currency line_item.line_item_total %></li>
+<tr>
+<td><%= line_item.product.name %></td>
+<td><%= number_to_currency line_item.product.price %></td>
+<td>Qty: <%= line_item.quantity %></td>
+<td><%= number_to_currency line_item.line_item_total %></td>
 <% end %>
-</div>
+</tr>
+</tbody>
+</table>
+
 
 <div>
 <%= link_to "Proceed to Checkout?", checkout_path, class: "btn btn-warning" %>

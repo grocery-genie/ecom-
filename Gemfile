@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'kaminari'
 gem 'figaro'
 gem 'stripe',:git=> 'https://github.com/stripe/stripe-ruby'
 gem 'bootstrap-sass'

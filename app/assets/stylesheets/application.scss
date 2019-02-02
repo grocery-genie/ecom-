@@ -19,19 +19,24 @@
 @import 'font-awesome';
 
 .navbar {
+background-color: #6600cc;
  min-height: 80px;
+
 }
 
 .navbar-brand {
   padding: 0 15px;
   height: 80px;
   line-height: 80px;
+  color: #ffffff;
+
 }
 
 .navbar-toggle {
   /* (80px - button height 34px) / 2 = 23px */
   margin-top: 23px;
   padding: 9px 10px !important;
+
 }
 
 @media (min-width: 768px) {
@@ -40,10 +45,6 @@
     padding-top: 26.5px;
     padding-bottom: 26.5px;
     line-height: 27px;
+    color: #ffffff
   }
-}
-
-body {
- background-image: url(https://cdn.hipwallpaper.com/i/79/77/npoVWr.jpg);
- background-position: cover;
 }
