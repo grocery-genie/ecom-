@@ -16,8 +16,9 @@
 <tr>
 <td><%= line_item.product.name %></td>
 <td><%= number_to_currency line_item.product.price %></td>
-<td>Qty: <%= line_item.quantity %></td>
+<td><%= line_item.quantity %></td>
 <td><%= number_to_currency line_item.line_item_total %></td>
+
 <% end %>
 </tr>
 </tbody>

@@ -38,7 +38,7 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to "My Cart", view_order_path %></li>
+      <li><%= link_to '<i class="glyphicon glyphicon-shopping-cart"></i>'.html_safe, view_order_path, :class => 'btn btn-lg btn-link'%></li>
  <% if user_signed_in? %>
     <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">

@@ -28,7 +28,7 @@ background-color: #6600cc;
   padding: 0 15px;
   height: 80px;
   line-height: 80px;
-  color: #ffffff;
+  color: #000;
 
 }
 
@@ -37,6 +37,10 @@ background-color: #6600cc;
   margin-top: 23px;
   padding: 9px 10px !important;
 
+}
+
+.nav > li > a:hover{
+    background-color:#000;
 }
 
 @media (min-width: 768px) {
